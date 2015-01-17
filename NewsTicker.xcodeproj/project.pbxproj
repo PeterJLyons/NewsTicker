@@ -14,6 +14,11 @@
 		FF5035B31A6A539500C9904A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5035B21A6A539500C9904A /* Images.xcassets */; };
 		FF5035B61A6A539500C9904A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5035B41A6A539500C9904A /* LaunchScreen.xib */; };
 		FF5035C21A6A539500C9904A /* NewsTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035C11A6A539500C9904A /* NewsTickerTests.m */; };
+		FF5035D71A6A53E000C9904A /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035CD1A6A53E000C9904A /* MWFeedInfo.m */; };
+		FF5035D81A6A53E000C9904A /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035CF1A6A53E000C9904A /* MWFeedItem.m */; };
+		FF5035D91A6A53E000C9904A /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035D11A6A53E000C9904A /* MWFeedParser.m */; };
+		FF5035DA1A6A53E000C9904A /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035D41A6A53E000C9904A /* NSDate+InternetDateTime.m */; };
+		FF5035DB1A6A53E000C9904A /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035D61A6A53E000C9904A /* NSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,17 @@
 		FF5035BB1A6A539500C9904A /* NewsTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5035C01A6A539500C9904A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5035C11A6A539500C9904A /* NewsTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTickerTests.m; sourceTree = "<group>"; };
+		FF5035CC1A6A53E000C9904A /* MWFeedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedInfo.h; sourceTree = "<group>"; };
+		FF5035CD1A6A53E000C9904A /* MWFeedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedInfo.m; sourceTree = "<group>"; };
+		FF5035CE1A6A53E000C9904A /* MWFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedItem.h; sourceTree = "<group>"; };
+		FF5035CF1A6A53E000C9904A /* MWFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedItem.m; sourceTree = "<group>"; };
+		FF5035D01A6A53E000C9904A /* MWFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser.h; sourceTree = "<group>"; };
+		FF5035D11A6A53E000C9904A /* MWFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedParser.m; sourceTree = "<group>"; };
+		FF5035D21A6A53E000C9904A /* MWFeedParser_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser_Private.h; sourceTree = "<group>"; };
+		FF5035D31A6A53E000C9904A /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		FF5035D41A6A53E000C9904A /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		FF5035D51A6A53E000C9904A /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		FF5035D61A6A53E000C9904A /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +79,7 @@
 		FF5035991A6A539500C9904A = {
 			isa = PBXGroup;
 			children = (
+				FF5035CB1A6A53E000C9904A /* MWFeedParser */,
 				FF5035A41A6A539500C9904A /* NewsTicker */,
 				FF5035BE1A6A539500C9904A /* NewsTickerTests */,
 				FF5035A31A6A539500C9904A /* Products */,
@@ -117,6 +134,25 @@
 				FF5035C01A6A539500C9904A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF5035CB1A6A53E000C9904A /* MWFeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				FF5035CC1A6A53E000C9904A /* MWFeedInfo.h */,
+				FF5035CD1A6A53E000C9904A /* MWFeedInfo.m */,
+				FF5035CE1A6A53E000C9904A /* MWFeedItem.h */,
+				FF5035CF1A6A53E000C9904A /* MWFeedItem.m */,
+				FF5035D01A6A53E000C9904A /* MWFeedParser.h */,
+				FF5035D11A6A53E000C9904A /* MWFeedParser.m */,
+				FF5035D21A6A53E000C9904A /* MWFeedParser_Private.h */,
+				FF5035D31A6A53E000C9904A /* NSDate+InternetDateTime.h */,
+				FF5035D41A6A53E000C9904A /* NSDate+InternetDateTime.m */,
+				FF5035D51A6A53E000C9904A /* NSString+HTML.h */,
+				FF5035D61A6A53E000C9904A /* NSString+HTML.m */,
+			);
+			name = MWFeedParser;
+			path = NewsTicker/MWFeedParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +257,12 @@
 			files = (
 				FF5035AE1A6A539500C9904A /* ViewController.m in Sources */,
 				FF5035AB1A6A539500C9904A /* AppDelegate.m in Sources */,
+				FF5035DB1A6A53E000C9904A /* NSString+HTML.m in Sources */,
+				FF5035D91A6A53E000C9904A /* MWFeedParser.m in Sources */,
+				FF5035DA1A6A53E000C9904A /* NSDate+InternetDateTime.m in Sources */,
+				FF5035D81A6A53E000C9904A /* MWFeedItem.m in Sources */,
 				FF5035A81A6A539500C9904A /* main.m in Sources */,
+				FF5035D71A6A53E000C9904A /* MWFeedInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
