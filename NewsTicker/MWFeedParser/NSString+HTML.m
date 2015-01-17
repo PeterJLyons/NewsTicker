@@ -121,10 +121,10 @@
         // Cleanup
         
         // Decode HTML entities and return
-        NSString *retString = [result stringByDecodingHTMLEntities];
+        //NSString *retString = [result stringByDecodingHTMLEntities];
         
         // Return
-        return retString;
+        return self;
         
     }
 }

@@ -19,6 +19,7 @@
 @implementation ViewController
 
 @synthesize itemsToDisplay;
+@synthesize articleViewer;
 
 
 - (void)viewDidLoad {
@@ -41,7 +42,7 @@
     // Parse
     //	NSURL *feedURL = [NSURL URLWithString:@"http://images.apple.com/main/rss/hotnews/hotnews.rss"];
     //	NSURL *feedURL = [NSURL URLWithString:@"http://feeds.mashable.com/Mashable"];
-    NSURL *feedURL = [NSURL URLWithString:@"http://techcrunch.com/feed/"];
+    NSURL *feedURL = [NSURL URLWithString:@"http://www.theverge.com/mobile/rss/index.xml"];
     feedParser = [[MWFeedParser alloc] initWithFeedURL:feedURL];
     feedParser.delegate = self;
     feedParser.feedParseType = ParseTypeFull; // Parse feed info and all items
@@ -156,10 +157,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    // Show detail
-    UITableViewController *detail = [[UITableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [self.navigationController pushViewController:detail animated:YES];
-    detail.title = [itemsToDisplay objectAtIndex:indexPath.row];
+    // Access URL of article
+    MWFeedItem *clickedArticle = [itemsToDisplay objectAtIndex:indexPath.row];
+    NSString *weblink = clickedArticle.link;
+    NSURL *link = [NSURL URLWithString:weblink];
+    NSURLRequest *request = [NSURLRequest requestWithURL:link];
+    [articleViewer setScalesPageToFit:YES];
+    [articleViewer loadRequest:request];
+    
+    
+    
     
     // Deselect
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];

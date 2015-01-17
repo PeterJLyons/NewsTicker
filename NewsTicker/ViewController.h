@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MWFeedParserDelegate> {
     
+    IBOutlet UIWebView *articleViewer;
     // Parsing
     MWFeedParser *feedParser;
     NSMutableArray *parsedItems;
@@ -23,6 +24,7 @@
 
 // Properties
 @property (nonatomic, strong) NSArray *itemsToDisplay;
+@property (nonatomic, retain) UIWebView *articleViewer;
 
 
 @end

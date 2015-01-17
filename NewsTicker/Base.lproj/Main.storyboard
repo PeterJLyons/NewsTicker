@@ -29,33 +29,43 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="20" width="400" height="600"/>
+                                    <rect key="frame" x="0.0" y="519" width="400" height="303"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="si5-xn-qtK"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="J4j-ly-0kK"/>
                                 </connections>
                             </tableView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaF-jW-Oos">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="501"/>
+                                </variation>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mUZ-Y3-PrQ"/>
+                                <exclude reference="DaF-jW-Oos"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="mUZ-Y3-PrQ"/>
+                                <include reference="DaF-jW-Oos"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="articleViewer" destination="DaF-jW-Oos" id="UMH-1i-sbs"/>
                         <outlet property="tableView" destination="mUZ-Y3-PrQ" id="gOm-DP-y3f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="340"/>
+            <point key="canvasLocation" x="-162" y="342"/>
         </scene>
     </scenes>
 </document>
