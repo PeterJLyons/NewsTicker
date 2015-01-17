@@ -79,7 +79,6 @@
 		FF5035991A6A539500C9904A = {
 			isa = PBXGroup;
 			children = (
-				FF5035CB1A6A53E000C9904A /* MWFeedParser */,
 				FF5035A41A6A539500C9904A /* NewsTicker */,
 				FF5035BE1A6A539500C9904A /* NewsTickerTests */,
 				FF5035A31A6A539500C9904A /* Products */,
@@ -98,6 +97,7 @@
 		FF5035A41A6A539500C9904A /* NewsTicker */ = {
 			isa = PBXGroup;
 			children = (
+				FF5035CB1A6A53E000C9904A /* MWFeedParser */,
 				FF5035A91A6A539500C9904A /* AppDelegate.h */,
 				FF5035AA1A6A539500C9904A /* AppDelegate.m */,
 				FF5035AC1A6A539500C9904A /* ViewController.h */,
@@ -151,8 +151,7 @@
 				FF5035D51A6A53E000C9904A /* NSString+HTML.h */,
 				FF5035D61A6A53E000C9904A /* NSString+HTML.m */,
 			);
-			name = MWFeedParser;
-			path = NewsTicker/MWFeedParser;
+			path = MWFeedParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +388,7 @@
 				INFOPLIST_FILE = NewsTicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -399,6 +399,7 @@
 				INFOPLIST_FILE = NewsTicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -455,6 +456,7 @@
 				FF5035C71A6A539500C9904A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF5035C81A6A539500C9904A /* Build configuration list for PBXNativeTarget "NewsTickerTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +465,7 @@
 				FF5035CA1A6A539500C9904A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
