@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		FF5035A81A6A539500C9904A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035A71A6A539500C9904A /* main.m */; };
 		FF5035AB1A6A539500C9904A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035AA1A6A539500C9904A /* AppDelegate.m */; };
-		FF5035AE1A6A539500C9904A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035AD1A6A539500C9904A /* ViewController.m */; };
-		FF5035B11A6A539500C9904A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5035AF1A6A539500C9904A /* Main.storyboard */; };
 		FF5035B31A6A539500C9904A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5035B21A6A539500C9904A /* Images.xcassets */; };
 		FF5035B61A6A539500C9904A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5035B41A6A539500C9904A /* LaunchScreen.xib */; };
 		FF5035C21A6A539500C9904A /* NewsTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035C11A6A539500C9904A /* NewsTickerTests.m */; };
@@ -19,6 +17,14 @@
 		FF5035D91A6A53E000C9904A /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035D11A6A53E000C9904A /* MWFeedParser.m */; };
 		FF5035DA1A6A53E000C9904A /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035D41A6A53E000C9904A /* NSDate+InternetDateTime.m */; };
 		FF5035DB1A6A53E000C9904A /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035D61A6A53E000C9904A /* NSString+HTML.m */; };
+		FF6296BD1A6B159A008DE068 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6296BC1A6B159A008DE068 /* MyCollectionViewCell.m */; };
+		FF6296C01A6B1902008DE068 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6296BF1A6B1902008DE068 /* MyCollectionViewController.m */; };
+		FF6296C21A6B1C0E008DE068 /* card.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF6296C11A6B1C0E008DE068 /* card.jpg */; };
+		FF6296C71A6B1D2F008DE068 /* bunny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF6296C31A6B1D2F008DE068 /* bunny.jpg */; };
+		FF6296C81A6B1D2F008DE068 /* panda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF6296C41A6B1D2F008DE068 /* panda.jpg */; };
+		FF6296C91A6B1D2F008DE068 /* roo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF6296C51A6B1D2F008DE068 /* roo.jpg */; };
+		FF6296CA1A6B1D2F008DE068 /* tiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF6296C61A6B1D2F008DE068 /* tiger.jpg */; };
+		FF6297081A6B20F4008DE068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6297061A6B20F4008DE068 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +43,6 @@
 		FF5035A71A6A539500C9904A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF5035A91A6A539500C9904A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF5035AA1A6A539500C9904A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FF5035AC1A6A539500C9904A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FF5035AD1A6A539500C9904A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FF5035B01A6A539500C9904A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF5035B21A6A539500C9904A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FF5035B51A6A539500C9904A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF5035BB1A6A539500C9904A /* NewsTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +59,16 @@
 		FF5035D41A6A53E000C9904A /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
 		FF5035D51A6A53E000C9904A /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
 		FF5035D61A6A53E000C9904A /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		FF6296BB1A6B159A008DE068 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		FF6296BC1A6B159A008DE068 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		FF6296BE1A6B1902008DE068 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
+		FF6296BF1A6B1902008DE068 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
+		FF6296C11A6B1C0E008DE068 /* card.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card.jpg; sourceTree = "<group>"; };
+		FF6296C31A6B1D2F008DE068 /* bunny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bunny.jpg; sourceTree = "<group>"; };
+		FF6296C41A6B1D2F008DE068 /* panda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panda.jpg; sourceTree = "<group>"; };
+		FF6296C51A6B1D2F008DE068 /* roo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roo.jpg; sourceTree = "<group>"; };
+		FF6296C61A6B1D2F008DE068 /* tiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiger.jpg; sourceTree = "<group>"; };
+		FF6297071A6B20F4008DE068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = NewsTicker/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +113,17 @@
 				FF5035CB1A6A53E000C9904A /* MWFeedParser */,
 				FF5035A91A6A539500C9904A /* AppDelegate.h */,
 				FF5035AA1A6A539500C9904A /* AppDelegate.m */,
-				FF5035AC1A6A539500C9904A /* ViewController.h */,
-				FF5035AD1A6A539500C9904A /* ViewController.m */,
-				FF5035AF1A6A539500C9904A /* Main.storyboard */,
+				FF6296BE1A6B1902008DE068 /* MyCollectionViewController.h */,
+				FF6296BF1A6B1902008DE068 /* MyCollectionViewController.m */,
+				FF6296C31A6B1D2F008DE068 /* bunny.jpg */,
+				FF6296C41A6B1D2F008DE068 /* panda.jpg */,
+				FF6296C51A6B1D2F008DE068 /* roo.jpg */,
+				FF6296C61A6B1D2F008DE068 /* tiger.jpg */,
+				FF6296C11A6B1C0E008DE068 /* card.jpg */,
+				FF6296BB1A6B159A008DE068 /* MyCollectionViewCell.h */,
+				FF6296BC1A6B159A008DE068 /* MyCollectionViewCell.m */,
 				FF5035B21A6A539500C9904A /* Images.xcassets */,
+				FF6297061A6B20F4008DE068 /* Main.storyboard */,
 				FF5035B41A6A539500C9904A /* LaunchScreen.xib */,
 				FF5035A51A6A539500C9904A /* Supporting Files */,
 			);
@@ -234,9 +254,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5035B11A6A539500C9904A /* Main.storyboard in Resources */,
+				FF6296C71A6B1D2F008DE068 /* bunny.jpg in Resources */,
+				FF6296C81A6B1D2F008DE068 /* panda.jpg in Resources */,
+				FF6296CA1A6B1D2F008DE068 /* tiger.jpg in Resources */,
+				FF6297081A6B20F4008DE068 /* Main.storyboard in Resources */,
+				FF6296C21A6B1C0E008DE068 /* card.jpg in Resources */,
 				FF5035B61A6A539500C9904A /* LaunchScreen.xib in Resources */,
 				FF5035B31A6A539500C9904A /* Images.xcassets in Resources */,
+				FF6296C91A6B1D2F008DE068 /* roo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,11 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5035AE1A6A539500C9904A /* ViewController.m in Sources */,
 				FF5035AB1A6A539500C9904A /* AppDelegate.m in Sources */,
 				FF5035DB1A6A53E000C9904A /* NSString+HTML.m in Sources */,
 				FF5035D91A6A53E000C9904A /* MWFeedParser.m in Sources */,
 				FF5035DA1A6A53E000C9904A /* NSDate+InternetDateTime.m in Sources */,
+				FF6296BD1A6B159A008DE068 /* MyCollectionViewCell.m in Sources */,
+				FF6296C01A6B1902008DE068 /* MyCollectionViewController.m in Sources */,
 				FF5035D81A6A53E000C9904A /* MWFeedItem.m in Sources */,
 				FF5035A81A6A539500C9904A /* main.m in Sources */,
 				FF5035D71A6A53E000C9904A /* MWFeedInfo.m in Sources */,
@@ -284,20 +310,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FF5035AF1A6A539500C9904A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF5035B01A6A539500C9904A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF5035B41A6A539500C9904A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FF5035B51A6A539500C9904A /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FF6297061A6B20F4008DE068 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF6297071A6B20F4008DE068 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -9,16 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MWFeedParser.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MWFeedParserDelegate> {
+@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, MWFeedParserDelegate> {
     
     IBOutlet UIWebView *articleViewer;
-    // Parsing
-    MWFeedParser *feedParser;
-    NSMutableArray *parsedItems;
-    
-    // Displaying
-    NSArray *itemsToDisplay;
-    NSDateFormatter *formatter;
     
 }
 
