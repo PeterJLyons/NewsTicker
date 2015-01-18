@@ -8,6 +8,7 @@
 
 #import "MyCollectionViewController.h"
 #import "MyCollectionViewCell.h"
+#import "BrowserViewController.h"
 
 @interface MyCollectionViewController ()
 
@@ -24,6 +25,13 @@ static NSString * const reuseIdentifier = @"MyCell";
     [super viewDidLoad];
     [self.collectionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     self.collectionView.backgroundColor = [UIColor clearColor];
+    _textToGoOn = [[UILabel alloc] initWithFrame:CGRectMake(10,20,350, 75)];
+    _textToGoOn.numberOfLines = 0;
+    _textToGoOn.lineBreakMode = UILineBreakModeWordWrap;
+    _textToGoOn.textAlignment = NSTextAlignmentCenter;
+    _textToGoOn.textColor = [UIColor whiteColor];
+    _textToGoOn.shadowColor = [UIColor blackColor];
+    _textToGoOn.shadowOffset = CGSizeMake(0, -1.5);
     
     // Configure layout
     self.flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -34,12 +42,17 @@ static NSString * const reuseIdentifier = @"MyCell";
     self.collectionView.bounces = YES;
     [self.collectionView setShowsHorizontalScrollIndicator:NO];
     [self.collectionView setShowsVerticalScrollIndicator:NO];
+    
+    // Configure UILabel???
+    
+    
 //    _stockimages = [@[@"verge.png",
 //                     @"bunny.jpg",
 //                     @"panda.jpg",
 //                     @"roo.jpg",
 //                     @"tiger.jpg"], mutableCopy];
     _images = [NSMutableArray array];
+    _titles = [NSMutableArray array];
     
     self.title = @"Loading...";
     formatter = [[NSDateFormatter alloc] init];
@@ -56,6 +69,8 @@ static NSString * const reuseIdentifier = @"MyCell";
     for (int i = 0; i < itemsToDisplay.count; i++) {
         MWFeedItem *currentitem = itemsToDisplay[i];
         NSString *start = currentitem.summary;
+        NSString *title = currentitem.title;
+        [_titles addObject:title];
         
         NSDataDetector* detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
         NSArray* matches = [detector matchesInString:start options:0 range:NSMakeRange(0, [start length])];
@@ -171,7 +186,7 @@ static NSString * const reuseIdentifier = @"MyCell";
     
     //MyCollectionViewCell *myCell = [[MyCollectionViewCell alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
 
-    myCell.imageView = [[UIImageView alloc] initWithFrame:myCell.frame];
+    //myCell.imageView = [[UIImageView alloc] initWithFrame:myCell.frame];
     UIImage *img;
     long row = indexPath.row;
     
@@ -181,8 +196,13 @@ static NSString * const reuseIdentifier = @"MyCell";
     //[self.collectionView addSubview:imageView];
     
     myCell.imageView = imageView;
+
+
+    _textToGoOn.text = _titles[indexPath.row];
+    UILabel *currentLabel = _textToGoOn;
+    [myCell addSubview:currentLabel];
+    [myCell bringSubviewToFront:currentLabel];
     
-    [myCell setTag: indexPath.row];
     
     return myCell;
 }
@@ -190,16 +210,11 @@ static NSString * const reuseIdentifier = @"MyCell";
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     
 //    // Access URL of article
-//    MWFeedItem *clickedArticle = [itemsToDisplay objectAtIndex:indexPath.row];
-//    NSString *weblink = clickedArticle.link;
-//    NSURL *link = [NSURL URLWithString:weblink];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:link];
-//    [articleViewer setScalesPageToFit:YES];
-//    [articleViewer loadRequest:request];
-    
-    MyCollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-    
-    NSLog(@"touched cell %@ at indexPath %@", cell, indexPath);
+    MWFeedItem *clickedArticle = [itemsToDisplay objectAtIndex:indexPath.row];
+    NSString *weblink = clickedArticle.link;
+    NSURL *link = [NSURL URLWithString:weblink];
+    NSURLRequest *request = [NSURLRequest requestWithURL:link];
+
     
     
     

@@ -27,6 +27,7 @@
 		FF6296C91A6B1D2F008DE068 /* roo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF6296C51A6B1D2F008DE068 /* roo.jpg */; };
 		FF6296CA1A6B1D2F008DE068 /* tiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF6296C61A6B1D2F008DE068 /* tiger.jpg */; };
 		FF6297081A6B20F4008DE068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6297061A6B20F4008DE068 /* Main.storyboard */; };
+		FFCE22CE1A6BB263006292D7 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE22CD1A6BB263006292D7 /* BrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		FF6296C51A6B1D2F008DE068 /* roo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roo.jpg; sourceTree = "<group>"; };
 		FF6296C61A6B1D2F008DE068 /* tiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiger.jpg; sourceTree = "<group>"; };
 		FF6297071A6B20F4008DE068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = NewsTicker/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFCE22CC1A6BB263006292D7 /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
+		FFCE22CD1A6BB263006292D7 /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				FF6296C11A6B1C0E008DE068 /* card.jpg */,
 				FF6296BB1A6B159A008DE068 /* MyCollectionViewCell.h */,
 				FF6296BC1A6B159A008DE068 /* MyCollectionViewCell.m */,
+				FFCE22CC1A6BB263006292D7 /* BrowserViewController.h */,
+				FFCE22CD1A6BB263006292D7 /* BrowserViewController.m */,
 				FF5035B21A6A539500C9904A /* Images.xcassets */,
 				FF6297061A6B20F4008DE068 /* Main.storyboard */,
 				FF5035B41A6A539500C9904A /* LaunchScreen.xib */,
@@ -294,6 +299,7 @@
 				FF6296BD1A6B159A008DE068 /* MyCollectionViewCell.m in Sources */,
 				FF6296C01A6B1902008DE068 /* MyCollectionViewController.m in Sources */,
 				FF5035D81A6A53E000C9904A /* MWFeedItem.m in Sources */,
+				FFCE22CE1A6BB263006292D7 /* BrowserViewController.m in Sources */,
 				FF5035A81A6A539500C9904A /* main.m in Sources */,
 				FF5035D71A6A53E000C9904A /* MWFeedInfo.m in Sources */,
 			);

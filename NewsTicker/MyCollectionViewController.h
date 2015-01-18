@@ -27,6 +27,8 @@
 @property (nonatomic, retain) UIWebView *articleViewer;
 @property (strong, nonatomic) NSMutableArray *images;
 @property (strong, nonatomic) NSMutableArray *stockimages;
+@property (strong,nonatomic) NSMutableArray *titles;
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) IBOutlet UICollectionViewFlowLayout *flowLayout;
+@property (strong, nonatomic) UILabel *textToGoOn;
 @end
