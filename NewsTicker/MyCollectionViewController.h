@@ -10,7 +10,7 @@
 #import "MyCollectionViewCell.h"
 #import "MWFeedParser.h"
 
-@interface MyCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate, MWFeedParserDelegate> {
+@interface MyCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, MWFeedParserDelegate> {
     
     // Parsing
     MWFeedParser *feedParser;
@@ -25,5 +25,8 @@
 // Properties
 @property (nonatomic, strong) NSArray *itemsToDisplay;
 @property (nonatomic, retain) UIWebView *articleViewer;
-@property (strong, nonatomic) NSMutableArray *cardImages;
+@property (strong, nonatomic) NSMutableArray *images;
+@property (strong, nonatomic) NSMutableArray *stockimages;
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, strong) IBOutlet UICollectionViewFlowLayout *flowLayout;
 @end

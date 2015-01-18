@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MyCollectionViewCell : UICollectionViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *storyCard;
+
+@property (nonatomic,strong) UIImageView *imageView;
+
 @end

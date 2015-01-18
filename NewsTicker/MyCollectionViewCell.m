@@ -10,4 +10,13 @@
 
 @implementation MyCollectionViewCell
 
+//-(id)initWithFrame:(CGRect)frame
+//{
+//    self = [super initWithFrame:frame];
+//    
+//    self.imageView = [[UIImageView alloc] init];
+//    [self addSubview:self.imageView];
+//    return self;
+//}
+
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF4E6B721A6B6F0F0090A0B5 /* verge.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4E6B701A6B6F0F0090A0B5 /* verge.png */; };
+		FF4E6B741A6B6F380090A0B5 /* default.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FF4E6B731A6B6F380090A0B5 /* default.jpeg */; };
 		FF5035A81A6A539500C9904A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035A71A6A539500C9904A /* main.m */; };
 		FF5035AB1A6A539500C9904A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5035AA1A6A539500C9904A /* AppDelegate.m */; };
 		FF5035B31A6A539500C9904A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5035B21A6A539500C9904A /* Images.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF4E6B701A6B6F0F0090A0B5 /* verge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = verge.png; path = ../../../../Desktop/verge.png; sourceTree = "<group>"; };
+		FF4E6B731A6B6F380090A0B5 /* default.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default.jpeg; path = NewsTicker/default.jpeg; sourceTree = "<group>"; };
 		FF5035A21A6A539500C9904A /* NewsTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5035A61A6A539500C9904A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5035A71A6A539500C9904A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 		FF5035991A6A539500C9904A = {
 			isa = PBXGroup;
 			children = (
+				FF4E6B731A6B6F380090A0B5 /* default.jpeg */,
 				FF5035A41A6A539500C9904A /* NewsTicker */,
 				FF5035BE1A6A539500C9904A /* NewsTickerTests */,
 				FF5035A31A6A539500C9904A /* Products */,
@@ -115,6 +120,7 @@
 				FF5035AA1A6A539500C9904A /* AppDelegate.m */,
 				FF6296BE1A6B1902008DE068 /* MyCollectionViewController.h */,
 				FF6296BF1A6B1902008DE068 /* MyCollectionViewController.m */,
+				FF4E6B701A6B6F0F0090A0B5 /* verge.png */,
 				FF6296C31A6B1D2F008DE068 /* bunny.jpg */,
 				FF6296C41A6B1D2F008DE068 /* panda.jpg */,
 				FF6296C51A6B1D2F008DE068 /* roo.jpg */,
@@ -257,9 +263,11 @@
 				FF6296C71A6B1D2F008DE068 /* bunny.jpg in Resources */,
 				FF6296C81A6B1D2F008DE068 /* panda.jpg in Resources */,
 				FF6296CA1A6B1D2F008DE068 /* tiger.jpg in Resources */,
+				FF4E6B741A6B6F380090A0B5 /* default.jpeg in Resources */,
 				FF6297081A6B20F4008DE068 /* Main.storyboard in Resources */,
 				FF6296C21A6B1C0E008DE068 /* card.jpg in Resources */,
 				FF5035B61A6A539500C9904A /* LaunchScreen.xib in Resources */,
+				FF4E6B721A6B6F0F0090A0B5 /* verge.png in Resources */,
 				FF5035B31A6A539500C9904A /* Images.xcassets in Resources */,
 				FF6296C91A6B1D2F008DE068 /* roo.jpg in Resources */,
 			);
